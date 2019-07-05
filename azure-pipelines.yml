@@ -18,11 +18,12 @@ steps:
   displayName: 'Run a one-line script'
 
 - task: SonarQubePrepare@4
+ 
   inputs:
-    SonarQube: 'Pravindaware'
-    scannerMode: 'MSBuild'
-    projectKey: 'Pravindaware'
-    projectName: 'Pravindaware'
+    SonarQube: 'PravinDaware'
+    scannerMode: 'CLI'
+    configMode: 'file'
+    
 - task: SonarQubeAnalyze@4
 - script: |
     echo Add other tasks to build, test, and deploy your project.
