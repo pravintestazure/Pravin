@@ -17,14 +17,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: SonarQubePrepare@4
- 
-  inputs:
-    SonarQube: 'PravinDaware'
-    scannerMode: 'CLI'
-    configMode: 'file'
-    
-- task: SonarQubeAnalyze@4
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
